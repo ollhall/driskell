@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.min.css?_v=20220506150256">
+    <title>Cart</title>
+</head>
+
+<body>
+    <div class="wrapper">
+        <header class="header">
+    <div class="header__container">
+        <div class="header__top top-header">
+            <a class="top-header__phone _icon-phone" data-da=".header__top,479.98,3"
+                href="tel:+380675525252"><span>+38(067)552-52-52</span></a>
+            <form class="top-header__search search" action="#">
+                <button class="search__btn _icon-search" type="submit"></button>
+                <input class="search__input" autocomplete="off" type="text" name="form[]" placeholder="Поиск">
+            </form>
+            <a class="top-header__logo-ibg top-header__logo-ibg_contain logo" href="index.html">
+                <img class="logo__img" src="img/logo.svg" alt="Логотип">
+            </a>
+            <a class="top-header__cart cart-header _icon-cart" href="cart.html">
+                <div class="cart-header__price uah">1 250</div>
+                <div class="cart-header__items">17</div>
+            </a>
+            <a class="top-header__favorite _icon-favorite" href="#"></a>
+            <a class="top-header__user _icon-user popup-link" href="#popup-user"></a>
+            <button type="button" class="icon-menu">
+                <span></span>
+            </button>
+        </div>
+        <nav class="header__menu menu-header menu">
+            <ul class="menu-header__list">
+                <li class="menu-header__item"><a class="menu-header__link" href="#">Скидки</a></li>
+                <li class="menu-header__item"><a class="menu-header__link" href="#">Тату наборы</a></li>
+                <li class="menu-header__item"><a class="menu-header__link" href="#">Краски</a></li>
+                <li class="menu-header__item"><a class="menu-header__link" href="#">Иглы</a></li>
+                <li class="menu-header__item"><a class="menu-header__link" href="#">Картриджи</a></li>
+                <li class="menu-header__item"><a class="menu-header__link _active" href="#">Машинки</a></li>
+                <li class="menu-header__item"><a class="menu-header__link" href="#">Держатели</a></li>
+                <li class="menu-header__item"><a class="menu-header__link" href="#">Наконечники</a></li>
+                <li class="menu-header__item"><a class="menu-header__link" href="contact.html">Контакты</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+        <main class="page page_inner">
+
+            <section class="cart-page">
+                <div class="cart-page__container">
+                    <h1 class="cart-page__title title">Корзина</h1>
+                    <div class="cart-page__inner">
+                        <table class="cart-page__table table-cart">
+                            <thead class="table-cart__primary primary-table">
+                                <tr class="primary-table__text">
+                                    <th>Наименование</th>
+                                    <th>Цена</th>
+                                    <th>Количество</th>
+                                    <th>Стоимость</th>
+                                </tr>
+                            </thead>
+                            <tbody class="table-cart__body body-table">
+                                <tr class="body-table__content content-table">
+                                    <td class="content-table__name name-table">
+                                        <div class="name-table__inner">
+                                            <a class="name-table__image" href="#">
+                                                <picture><source srcset="img/cart/01.webp" type="image/webp"><img class="name-table__img" src="img/cart/01.jpg" alt="Картинка"></picture>
+                                            </a>
+                                            <a class="name-table__text" href="#">
+                                                <h3>Foxxx Viper Fox Golden Vintage Lot #1 RCA</h3>
+                                            </a>
+                                        </div>
+                                    </td>
+                                    <td aria-label="Цена:" class="content-table__price uah">1500</td>
+                                    <td class="content-table__quantity quantity-table">
+                                        <div class="quantity-table__body quantity">
+                                            <button class="quantity__button quantity__button_minus _icon-minus"
+                                                type="button"></button>
+                                            <div class="quantity__input">
+                                                <input autocomplete="off" type="text" name="form[]" value="1">
+                                            </div>
+                                            <button class="quantity__button quantity__button_plus _icon-plus"
+                                                type="button"></button>
+                                        </div>
+                                    </td>
+                                    <td class="content-table__total total-table">
+                                        <div class="total-table__inner">
+                                            <div aria-label="Стоимость:" class="total-table__price uah">4500</div>
+                                            <div class="total-table__sale body-product__sale">3%</div>
+                                            <a class="total-table__del _icon-del" href="#"></a>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr class="body-table__content content-table">
+                                    <td class="content-table__name name-table">
+                                        <div class="name-table__inner">
+                                            <a class="name-table__image" href="#">
+                                                <picture><source srcset="img/cart/02.webp" type="image/webp"><img class="name-table__img" src="img/cart/02.jpg" alt="Картинка"></picture>
+                                            </a>
+                                            <a class="name-table__text" href="#">
+                                                <h3>Перчатки Нитровиниловые</h3>
+                                            </a>
+                                        </div>
+                                    </td>
+                                    <td aria-label="Цена:" class="content-table__price uah">20</td>
+                                    <td class="content-table__quantity quantity-table">
+                                        <div class="quantity-table__body quantity">
+                                            <button class="quantity__button quantity__button_minus _icon-minus"
+                                                type="button"></button>
+                                            <div class="quantity__input">
+                                                <input autocomplete="off" type="text" name="form[]" value="1">
+                                            </div>
+                                            <button class="quantity__button quantity__button_plus _icon-plus"
+                                                type="button"></button>
+                                        </div>
+                                    </td>
+                                    <td class="content-table__total total-table">
+                                        <div class="total-table__inner">
+                                            <div aria-label="Стоимость:" class="total-table__price uah">20</div>
+                                            <a class="total-table__del _icon-del" href="#"></a>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr class="body-table__content content-table">
+                                    <td class="content-table__name name-table">
+                                        <div class="name-table__inner">
+                                            <a class="name-table__image" href="#">
+                                                <picture><source srcset="img/cart/03.webp" type="image/webp"><img class="name-table__img" src="img/cart/03.jpg" alt="Картинка"></picture>
+                                            </a>
+                                            <a class="name-table__text" href="#">
+                                                <h3>КРАСКА Tattoo Ink Малевич Черный 50 мл</h3>
+                                            </a>
+                                        </div>
+                                    </td>
+                                    <td aria-label="Цена:" class="content-table__price uah">650</td>
+                                    <td class="content-table__quantity quantity-table">
+                                        <div class="quantity-table__body quantity">
+                                            <button class="quantity__button quantity__button_minus _icon-minus"
+                                                type="button"></button>
+                                            <div class="quantity__input">
+                                                <input autocomplete="off" type="text" name="form[]" value="1">
+                                            </div>
+                                            <button class="quantity__button quantity__button_plus _icon-plus"
+                                                type="button"></button>
+                                        </div>
+                                    </td>
+                                    <td class="content-table__total total-table">
+                                        <div class="total-table__inner">
+                                            <div aria-label="Стоимость:" class="total-table__price uah">1300</div>
+                                            <a class="total-table__del _icon-del" href="#"></a>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr class="body-table__content content-table">
+                                    <td class="content-table__name name-table">
+                                        <div class="name-table__inner">
+                                            <a class="name-table__image" href="#">
+                                                <picture><source srcset="img/cart/04.webp" type="image/webp"><img class="name-table__img" src="img/cart/04.jpg" alt="Картинка"></picture>
+                                            </a>
+                                            <a class="name-table__text" href="#">
+                                                <h3>Verge Grip 35 мм</h3>
+                                            </a>
+                                        </div>
+                                    </td>
+                                    <td aria-label="Цена:" class="content-table__price uah">587</td>
+                                    <td class="content-table__quantity quantity-table">
+                                        <div class="quantity-table__body quantity">
+                                            <button class="quantity__button quantity__button_minus _icon-minus"
+                                                type="button"></button>
+                                            <div class="quantity__input">
+                                                <input autocomplete="off" type="text" name="form[]" value="1">
+                                            </div>
+                                            <button class="quantity__button quantity__button_plus _icon-plus"
+                                                type="button"></button>
+                                        </div>
+                                    </td>
+                                    <td class="content-table__total total-table">
+                                        <div class="total-table__inner">
+                                            <div aria-label="Стоимость:" class="total-table__price uah">587</div>
+                                            <a class="total-table__del _icon-del" href="#"></a>
+                                        </div>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="table-cart__sum sum-table">
+                        <div class="sum-table__body">
+                            <div class="sum-table__items items-sum">
+                                <div class="items-sum__label">Всего единиц товара:</div>
+                                <div class="items-sum__text uah">17</div>
+                            </div>
+                            <div class="sum-table__sale sale-sum">
+                                <div class="sale-sum__label">Общая скидка:</div>
+                                <div class="sale-sum__text uah">1080</div>
+                            </div>
+                            <div class="sum-table__total total-sum">
+                                <div class="total-sum__label">Итого:</div>
+                                <div class="total-sum__text uah">15 400</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="cart-page__delivery delivery">
+                <div class="delivery__container">
+                    <div class="delivery__form form">
+                        <form class="form__body">
+                            <h3 class="form__title title_delivery">Информация о получателе</h3>
+                            <div class="form__items">
+                                <div class="form__item">
+                                    <label for="formName" class="form__label">Имя</label>
+                                    <input id="formName" type="text" name="name" class="form__input">
+                                </div>
+                                <div class="form__item">
+                                    <label for="formPhone" class="form__label">Номер телефона</label>
+                                    <input id="formPhone" type="tel" name="phone" class="form__input">
+                                </div>
+                                <div class="form__item">
+                                    <label for="formEmail" class="form__label">Эл. почта</label>
+                                    <input id="formEmail" type="email" name="email" class="form__input">
+                                </div>
+                            </div>
+                            <h3 class="form__title title_delivery">Адрес доставки</h3>
+                            <div class="form__items">
+                                <div class="form__item">
+                                    <label for="formCity" class="form__label">Город</label>
+                                    <input id="formCity" type="text" name="city" class="form__input">
+                                </div>
+                                <div class="form__item form__item_address">
+                                    <label for="formAddress" class="form__label">Адрес</label>
+                                    <input id="formAddress" type="text" name="address" class="form__input">
+                                </div>
+                                <div class="form__item form__item_postcode">
+                                    <label for="formPostcode" class="form__label">Индекс</label>
+                                    <input id="formPostcode" type="text" name="postcode" class="form__input">
+                                </div>
+                            </div>
+                            <div class="form__inner">
+                                <div class="form__item form__item_type">
+                                    <h3 class="form__title title_delivery">Тип доставки</h3>
+                                    <div class="options">
+                                        <div class="options__item radio">
+                                            <input id="formCourier" checked type="radio" value="courier" name="type"
+                                                class="options__input radio__input">
+                                            <label for="formCourier" class="options__label radio__label"><span
+                                                    class="options__text radio__text">Доставка
+                                                    курьером</span></label>
+                                        </div>
+                                        <div class="options__item radio">
+                                            <input id="formPickup" type="radio" value="pickup" name="type"
+                                                class="options__input radio__input">
+                                            <label for="formPickup" class="options__label radio__label"><span
+                                                    class="options__text radio__text">Самовывоз</span></label>
+                                        </div>
+                                        <div class="options__item radio">
+                                            <input id="formPostOffice" type="radio" value="post" name="type"
+                                                class="options__input radio__input">
+                                            <label for="formPostOffice" class="options__label radio__label"><span
+                                                    class="options__text radio__text">Почта</span></label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form__payment">
+                                    <h3 class="form__title title_delivery">Оплата</h3>
+                                    <div class="form__item form__item_payment">
+                                        <input type="text" name="code" class="form__input form__input_code">
+                                        <a class="form__btn-link popup-link" href="#popup-code">
+                                            <button class="form__btn-code border" type="button">Активировать код</button>
+                                        </a>
+                                    </div>
+                                    <div class="form__total total-form">
+                                        <div class="total-form__info info-form">
+                                            <div class="info-form__deliv deliv-info">
+                                                <div class="deliv-info__label">Доставка :</div>
+                                                <div class="deliv-info__text uah">50</div>
+                                            </div>
+                                            <div class="info-form__total total-info">
+                                                <div class="total-info__label">Итого:</div>
+                                                <div class="total-info__text uah">15 450</div>
+                                            </div>
+                                        </div>
+                                        <a class="form__btn-link popup-link" href="#popup-total">
+                                            <button class="form__btn-total button" type="submit">Оформить заказ</button>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </section>
+
+        </main>
+        <footer class="footer">
+    <div class="footer__container">
+        <div class="footer__body">
+            <nav class="footer__menu footer-menu">
+                <ul class="footer-menu__list">
+                    <li class="footer-menu__item"><a class="footer-menu__link" href="#">Машинки</a></li>
+                    <li class="footer-menu__item"><a class="footer-menu__link" href="#">Тату наборы</a></li>
+                    <li class="footer-menu__item"><a class="footer-menu__link" href="#">Краски</a></li>
+                    <li class="footer-menu__item"><a class="footer-menu__link" href="#">Иглы</a></li>
+                </ul>
+                <ul class="footer-menu__list">
+                    <li class="footer-menu__item"><a class="footer-menu__link" href="#">Картриджи</a></li>
+                    <li class="footer-menu__item"><a class="footer-menu__link" href="#">Держатели</a></li>
+                    <li class="footer-menu__item"><a class="footer-menu__link" href="#">Наконечники</a></li>
+                    <li class="footer-menu__item"><a class="footer-menu__link" href="#">Прочие товары</a></li>
+                </ul>
+            </nav>
+            <div class="footer__top top-footer">
+                <a class="top-footer__logo-ibg top-footer__logo-ibg_contain logo" href="index.html">
+                    <img class="logo__img" src="img/logo.svg" alt="Логотип">
+                </a>
+                <a class="top-footer__phone _icon-phone" href="tel:+380675525252"><span>+38(067)552-52-52</span></a>
+                <div class="footer__social social-footer">
+                    <a class="social-footer__item" href="#">TW</a>
+                    <a class="social-footer__item" href="#">Inst</a>
+                    <a class="social-footer__item" href="#">FB</a>
+                </div>
+            </div>
+            <div class="footer__bottom bottom-footer">
+                <ul class="bottom-footer__list">
+                    <li class="bottom-footer__item"><a class="bottom-footer__link" href="contact.html">Контакты</a></li>
+                    <li class="bottom-footer__item"><a class="bottom-footer__link" href="about.html">О компании</a></li>
+                    <li class="bottom-footer__item"><a class="bottom-footer__link" href="#">Скидки</a></li>
+                </ul>
+                <a class="bottom-footer__btn-up btn-up" href="#">
+                    <div class="btn-up__text">Вернуться вверх</div>
+                    <div class="btn-up__button"></div>
+                </a>
+            </div>
+        </div>
+        <div class="footer__privacy-policy privacy-policy">
+            <a class="privacy-policy__link" href="#">Политика конфиденциальности</a>
+        </div>
+    </div>
+</footer>
+    </div>
+
+    <div class="popup-user popup" id="popup-user">
+    <div class="popup-user__wrapper wrapper">
+        <div class="popup-user__body">
+            <div class="popup-user__content popup__content">
+                <button class="popup-user__btn-close close-popup"></button>
+                <div class="popup-user__title">Зарегистрируйтесь или войдите</div>
+                <form class="popup-user__form form-user">
+                    <div class="form-user__item">
+                        <label for="formPhone" class="form-user__label">Номер телефона</label>
+                        <input id="formPhone" type="tel" name="name" class="form-user__input"
+                            placeholder="Введите номер">
+                    </div>
+                </form>
+                <button class="popup-user__button button" type="button">Получить код в SMS</button>
+                <div class="popup-user__social-title">Или войдите с помощью соц. сетей</div>
+                <div class="popup-user__social-links social-popup">
+                    <a class="social-popup__item" href="#">TW</a>
+                    <a class="social-popup__item" href="#">Inst</a>
+                    <a class="social-popup__item" href="#">FB</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="popup-total popup" id="popup-total">
+    <div class="popup-total__wrapper wrapper">
+        <div class="popup-total__body">
+            <div class="popup-total__content popup__content">
+                <button class="popup-total__btn-close close-popup"></button>
+                <div class="popup-total__title">Спасибо за заказ!</div>
+                <div class="popup-total__text">
+                    В ближайшее время с вами свяжется наш менеджер для уточнения деталей доставки
+                </div>
+                <a class="popup-total__button button" href="catalog.html">Вернуться к покупкам</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="popup-code popup" id="popup-code">
+    <div class="popup-code__wrapper wrapper">
+        <div class="popup-code__body">
+            <div class="popup-code__content popup__content">
+                <button class="popup-code__btn-close close-popup"></button>
+                <div class="popup-code__title">Промокод неактивен</div>
+                <div class="popup-code__text">
+                    Проверьте правильность написания промокода или попробуйте другой
+                </div>
+                <a class="popup-code__button button" href="cart.html">Вернуться в корзину</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="popup-review__bg popup-two__bg">
+    <div class="popup-review popup-two">
+        <button class="popup-review__btn-close close-popup-two"></button>
+        <div class="popup-review__wrapper">
+            <div class="popup-review__title">Оставьте отзыв об этом товаре</div>
+
+            <form class="popup-review__form form-popup-review">
+                <textarea class="form-popup-review__area"></textarea>
+
+                <div class="form-popup-review__box">
+
+                    <div class="popup-review__rating rating rating_set">
+                        <div class="rating__title">Как вы оцениваете этот товар?</div>
+                        <div class="popup-review__body rating__body">
+                            <div class="popup-review__active rating__active"></div>
+                            <div class="popup-review__items rating__items">
+                                <input class="popup-review__item rating__item" type="radio" value="1" name="rating">
+                                <input class="popup-review__item rating__item" type="radio" value="2" name="rating">
+                                <input class="popup-review__item rating__item" type="radio" value="3" name="rating">
+                                <input class="popup-review__item rating__item" type="radio" value="4" name="rating">
+                                <input class="popup-review__item rating__item" type="radio" value="5" name="rating">
+                            </div>
+                        </div>
+                        <div class="popup-review__value rating__value">0</div>
+                    </div>
+                    <button class="form-popup-review__btn border" type="submit">Оставить отзыв</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+    <script src="js/app.min.js?_v=20220506150256"></script>
+</body>
+
+</html>

@@ -1,0 +1,964 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.min.css?_v=20220506150256">
+    <title>Catalog</title>
+</head>
+
+<body>
+    <div class="wrapper">
+        <header class="header">
+    <div class="header__container">
+        <div class="header__top top-header">
+            <a class="top-header__phone _icon-phone" data-da=".header__top,479.98,3"
+                href="tel:+380675525252"><span>+38(067)552-52-52</span></a>
+            <form class="top-header__search search" action="#">
+                <button class="search__btn _icon-search" type="submit"></button>
+                <input class="search__input" autocomplete="off" type="text" name="form[]" placeholder="Поиск">
+            </form>
+            <a class="top-header__logo-ibg top-header__logo-ibg_contain logo" href="index.html">
+                <img class="logo__img" src="img/logo.svg" alt="Логотип">
+            </a>
+            <a class="top-header__cart cart-header _icon-cart" href="cart.html">
+                <div class="cart-header__price uah">1 250</div>
+                <div class="cart-header__items">17</div>
+            </a>
+            <a class="top-header__favorite _icon-favorite" href="#"></a>
+            <a class="top-header__user _icon-user popup-link" href="#popup-user"></a>
+            <button type="button" class="icon-menu">
+                <span></span>
+            </button>
+        </div>
+        <nav class="header__menu menu-header menu">
+            <ul class="menu-header__list">
+                <li class="menu-header__item"><a class="menu-header__link" href="#">Скидки</a></li>
+                <li class="menu-header__item"><a class="menu-header__link" href="#">Тату наборы</a></li>
+                <li class="menu-header__item"><a class="menu-header__link" href="#">Краски</a></li>
+                <li class="menu-header__item"><a class="menu-header__link" href="#">Иглы</a></li>
+                <li class="menu-header__item"><a class="menu-header__link" href="#">Картриджи</a></li>
+                <li class="menu-header__item"><a class="menu-header__link _active" href="#">Машинки</a></li>
+                <li class="menu-header__item"><a class="menu-header__link" href="#">Держатели</a></li>
+                <li class="menu-header__item"><a class="menu-header__link" href="#">Наконечники</a></li>
+                <li class="menu-header__item"><a class="menu-header__link" href="contact.html">Контакты</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+        <main class="page page_inner">
+            <section class="catalog">
+                <div class="catalog__container">
+                    <h1 class="catalog__title title">Тату машинки</h1>
+                    <div class="catalog__body">
+                        <div class="catalog__filter filter-catalog">
+                            <button class="filter-catalog__title _icon-arrow-spoller" type="button">Фильтр</button>
+                            <div class="filter-catalog__items" data-spollers>
+                                <div class="filter-catalog__price price-filter">
+                                    <button class="price-filter__title _icon-arrow-spoller" type="button"
+                                        data-spoller>Цена</button>
+                                    <div class="price-filter__body">
+                                        <div class="price-filter__slider"></div>
+                                        <div class="price-filter__values values-price-filter">
+                                            <div class="values-price-filter__input">
+                                                <input class="input" id="price-start" autocomplete="off" type="text"
+                                                    name="form[]">
+                                            </div>
+                                            <div class="values-price-filter__input">
+                                                <input class="input" id="price-end" autocomplete="off" type="text"
+                                                    name="form[]">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="filter-catalog__item item-filter-catalog">
+                                    <button class="item-filter-catalog__title _icon-arrow-spoller" type="button"
+                                        data-spoller>Способ доставки</button>
+                                    <div class="item-filter-catalog__body">
+                                        <div class="item-filter-catalog__radio radio">
+                                            <input class="radio__input" id="r_1" type="radio" name="1">
+                                            <label class="radio__label" for="r_1"><span class="radio__text">Доставка
+                                                    курьером</span></label>
+                                        </div>
+                                        <div class="item-filter-catalog__radio radio">
+                                            <input class="radio__input" id="r_2" type="radio" name="1">
+                                            <label class="radio__label" for="r_2"><span
+                                                    class="radio__text">Самовывоз</span></label>
+                                        </div>
+                                        <div class="item-filter-catalog__radio radio">
+                                            <input class="radio__input" id="r_3" type="radio" name="1">
+                                            <label class="radio__label" for="r_3"><span
+                                                    class="radio__text">Любой</span></label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="filter-catalog__item item-filter-catalog">
+                                    <button class="item-filter-catalog__title _icon-arrow-spoller" type="button"
+                                        data-spoller>Бренд</button>
+                                    <div class="item-filter-catalog__body">
+                                        <div class="item-filter-catalog__checkbox checkbox">
+                                            <input class="checkbox__input" id="c_1" type="checkbox" value="1">
+                                            <label class="checkbox__label" for="c_1"><span
+                                                    class="checkbox__text">Mustang
+                                                    Tattoo</span></label>
+                                        </div>
+                                        <div class="item-filter-catalog__checkbox checkbox">
+                                            <input class="checkbox__input" id="c_2" type="checkbox" value="1">
+                                            <label class="checkbox__label" for="c_2"><span
+                                                    class="checkbox__text">Mustang
+                                                    Tattoo</span></label>
+                                        </div>
+                                        <div class="item-filter-catalog__checkbox checkbox">
+                                            <input class="checkbox__input" id="c_3" type="checkbox" value="1">
+                                            <label class="checkbox__label" for="c_3"><span class="checkbox__text">EZ
+                                                    Tattoo</span></label>
+                                        </div>
+                                        <div class="item-filter-catalog__checkbox checkbox">
+                                            <input class="checkbox__input" id="c_4" type="checkbox" value="1">
+                                            <label class="checkbox__label" for="c_4"><span
+                                                    class="checkbox__text">Ambition
+                                                    Revolution SX</span></label>
+                                        </div>
+                                        <div class="item-filter-catalog__checkbox checkbox">
+                                            <input class="checkbox__input" id="c_5" type="checkbox" value="1">
+                                            <label class="checkbox__label" for="c_5"><span
+                                                    class="checkbox__text">FOXXX</span></label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="filter-catalog__item item-filter-catalog item-filter-catalog_guarantee">
+                                    <button class="item-filter-catalog__title item-filter-catalog__title_guarantee"
+                                        type="button">Гарантия</button>
+                                    <label class="item-filter-catalog__switch switch">
+                                        <input class="switch__checkbox" type="checkbox">
+                                        <span class="switch__slider"></span>
+                                    </label>
+                                </div>
+                                <div class="filter-catalog__item item-filter-catalog">
+                                    <button class="item-filter-catalog__title _icon-arrow-spoller" type="button"
+                                        data-spoller>Цвет</button>
+                                    <div class="item-filter-catalog__body item-filter-catalog__body_color">
+                                        <div class="item-filter-catalog__inner">
+                                            <div
+                                                class="item-filter-catalog__checkbox item-filter-catalog__checkbox_color checkbox">
+                                                <input class="checkbox__input" id="s_1" type="checkbox" value="1">
+                                                <label
+                                                    class="checkbox__label checkbox__label_color checkbox__label_color-black"
+                                                    for="s_1"></label>
+                                            </div>
+                                            <div
+                                                class="item-filter-catalog__checkbox item-filter-catalog__checkbox_color checkbox">
+                                                <input class="checkbox__input" id="s_2" type="checkbox" value="1">
+                                                <label
+                                                    class="checkbox__label checkbox__label_color checkbox__label_color-pink"
+                                                    for="s_2"></label>
+                                            </div>
+                                            <div
+                                                class="item-filter-catalog__checkbox item-filter-catalog__checkbox_color checkbox">
+                                                <input class="checkbox__input" id="s_3" type="checkbox" value="1">
+                                                <label
+                                                    class="checkbox__label checkbox__label_color checkbox__label_color-yellow"
+                                                    for="s_3"></label>
+                                            </div>
+                                            <div
+                                                class="item-filter-catalog__checkbox item-filter-catalog__checkbox_color checkbox">
+                                                <input class="checkbox__input" id="s_4" type="checkbox" value="1">
+                                                <label
+                                                    class="checkbox__label checkbox__label_color checkbox__label_color-green"
+                                                    for="s_4"></label>
+                                            </div>
+                                            <div
+                                                class="item-filter-catalog__checkbox item-filter-catalog__checkbox_color checkbox">
+                                                <input class="checkbox__input" id="s_5" type="checkbox" value="1">
+                                                <label
+                                                    class="checkbox__label checkbox__label_color checkbox__label_color-blue"
+                                                    for="s_5"></label>
+                                            </div>
+                                            <div
+                                                class="item-filter-catalog__checkbox item-filter-catalog__checkbox_color checkbox">
+                                                <input class="checkbox__input" id="s_6" type="checkbox" value="1">
+                                                <label
+                                                    class="checkbox__label checkbox__label_color checkbox__label_color-fuschia"
+                                                    for="s_6"></label>
+                                            </div>
+                                            <div
+                                                class="item-filter-catalog__checkbox item-filter-catalog__checkbox_color checkbox">
+                                                <input class="checkbox__input" id="s_7" type="checkbox" value="1">
+                                                <label
+                                                    class="checkbox__label checkbox__label_color checkbox__label_color-orange"
+                                                    for="s_7"></label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="filter-catalog__item item-filter-catalog">
+                                    <button class="item-filter-catalog__title _icon-arrow-spoller" type="button"
+                                        data-spoller>Назначение</button>
+                                    <div class="item-filter-catalog__body">
+                                        <div class="item-filter-catalog__checkbox checkbox">
+                                            <input class="checkbox__input" id="l_1" type="checkbox" value="1">
+                                            <label class="checkbox__label" for="l_1"><span class="checkbox__text">EC
+                                                    <small>(66)</small></span></label>
+                                        </div>
+                                        <div class="item-filter-catalog__checkbox checkbox">
+                                            <input class="checkbox__input" id="l_2" type="checkbox" value="1">
+                                            <label class="checkbox__label" for="l_2"><span class="checkbox__text">EC
+                                                    Full Thickness<small>(17)</small></span></label>
+                                        </div>
+                                        <div class="item-filter-catalog__checkbox checkbox">
+                                            <input class="checkbox__input" id="l_3" type="checkbox" value="1">
+                                            <label class="checkbox__label" for="l_3"><span
+                                                    class="checkbox__text">EX<small>(4)</small></span></label>
+                                        </div>
+
+                                    </div>
+                                </div>
+                                <div class="filter-catalog__item item-filter-catalog">
+                                    <button class="item-filter-catalog__title _icon-arrow-spoller" type="button"
+                                        data-spoller>Страна производства</button>
+                                    <div class="item-filter-catalog__body">
+                                        <div class="item-filter-catalog__checkbox checkbox">
+                                            <input class="checkbox__input" id="b_1" type="checkbox" value="1">
+                                            <label class="checkbox__label" for="b_1"><span
+                                                    class="checkbox__text">Тайвань</span></label>
+                                        </div>
+                                        <div class="item-filter-catalog__checkbox checkbox">
+                                            <input class="checkbox__input" id="b_2" type="checkbox" value="1">
+                                            <label class="checkbox__label" for="b_2"><span
+                                                    class="checkbox__text">Япония</span></label>
+                                        </div>
+                                        <div class="item-filter-catalog__checkbox checkbox">
+                                            <input class="checkbox__input" id="b_3" type="checkbox" value="1">
+                                            <label class="checkbox__label" for="b_3"><span
+                                                    class="checkbox__text">США</span></label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="catalog__content">
+                            <div class="catalog__control control-catalog">
+                                <div class="control-catalog__info info-control">
+                                    <div class="info-control__item item-info">
+                                        <div class="item-info__type">Тип: <span>Роторная</span></div>
+                                        <button class="item-info__del _icon-del" type="button"></button>
+                                    </div>
+                                    <div class="info-control__item item-info">
+                                        <div class="item-info__purpose">Назначение: <span>Liner</span></div>
+                                        <button class="item-info__del _icon-del" type="button"></button>
+                                    </div>
+                                </div>
+                                <div class="control-catalog__sorting sorting">
+                                    <div class="sorting__title">Сортировка</div>
+                                    <div class="sorting__dropdown dropdown">
+                                        <button class="dropdown__button _icon-arrow-spoller">Сначала по акции</button>
+                                        <ul class="dropdown__list">
+                                            <li class="dropdown__list-item" data-value="1">Сначала по акции</li>
+                                            <li class="dropdown__list-item" data-value="2">Сначала дешевые</li>
+                                            <li class="dropdown__list-item" data-value="3">Сначала дорогие</li>
+                                            <li class="dropdown__list-item" data-value="4">Сначала популярные</li>
+                                            <li class="dropdown__list-item" data-value="5">Сначала по акции</li>
+                                        </ul>
+                                        <input type="text" name="select-category" value=""
+                                            class="dropdown__input-hidden">
+                                    </div>
+                                </div>
+                                <div class="control-catalog__view view-catalog">
+                                    <button class="view-catalog__column _icon-menu _active" type="button"></button>
+                                    <button class="view-catalog__row _icon-menu-gorizontal" type="button"></button>
+                                </div>
+                            </div>
+                            <div class="catalog__products product-catalog">
+                                <article class="product-catalog__item">
+                                    <div class="product-cart__favorite _icon-favorite"></div>
+                                    <a class="product-cart__image" href="single-product.html">
+                                        <span class="product-cart__item-image-ibg product-cart__item-image-ibg_contain">
+                                            <picture><source srcset="img/catalog/product/01.webp" type="image/webp"><img src="img/catalog/product/01.jpg" alt="Картинка"></picture>
+                                        </span>
+                                    </a>
+                                    <div class="product-cart__body">
+                                        <a class="product-cart__category" href="#">Тату машинки</a>
+                                        <a class="product-cart__title" href="#">Foxxx Kitsune Mini Black Vintage RCA</a>
+                                        <div class="product-cart__descr">
+                                            Эксцентрик имеет вкладыш — для регулировки нужного вам хода иглы.
+                                            Так же эксцентрик спроектирован так, что на машине отсутствует центробежная
+                                            тяга, в следствии чего отсутствует вибрация в процессе работы
+                                        </div>
+                                        <div class="product-cart__rating rating rating_set rating-product">
+                                            <div class="rating-product__body rating__body">
+                                                <div class="rating-product__active rating__active"></div>
+                                                <div class="rating-product__items rating__items">
+                                                    <input class="rating-product__item rating__item" type="radio"
+                                                        value="1" name="rating">
+                                                    <input class="rating-product__item rating__item" type="radio"
+                                                        value="2" name="rating">
+                                                    <input class="rating-product__item rating__item" type="radio"
+                                                        value="3" name="rating">
+                                                    <input class="rating-product__item rating__item" type="radio"
+                                                        value="4" name="rating">
+                                                    <input class="rating-product__item rating__item" type="radio"
+                                                        value="5" name="rating">
+                                                </div>
+                                            </div>
+                                            <div class="rating-product__value rating__value">4.5</div>
+                                            <div class="rating-product__review rating__review">1020 отзывов</div>
+                                        </div>
+                                        <div class="product-cart__price price-product-cart">
+                                            <div class="price-product-cart__new uah">2380</div>
+                                            <div class="price-product-cart__old">2500</div>
+                                            <button class="product-cart__btn" type="button">Добавить в корзину</button>
+                                        </div>
+
+                                    </div>
+                                </article>
+                                <article class="product-catalog__item">
+                                    <div class="product-cart__favorite _icon-favorite"></div>
+                                    <div class="product-cart__new">Новинка</div>
+                                    <a class="product-cart__image" href="single-product.html">
+                                        <span class="product-cart__item-image-ibg product-cart__item-image-ibg_contain">
+                                            <picture><source srcset="img/catalog/product/02.webp" type="image/webp"><img src="img/catalog/product/02.jpg" alt="Картинка"></picture>
+                                        </span>
+                                    </a>
+                                    <div class="product-cart__body">
+                                        <a class="product-cart__category" href="#">Тату машинки</a>
+                                        <a class="product-cart__title" href="#">Foxxx Viper Fox Golden Vintage Lot #1
+                                            RCA</a>
+                                        <div class="product-cart__descr">
+                                            Viper - машинка собрана на мощном моторе, рама данной модели сделана
+                                            из прочного
+                                            и лёгкого алюминиевого сплава. В связи с этим вес данной машины всего 120
+                                            грамм
+                                        </div>
+                                        <div class="product-cart__rating rating rating_set rating-product">
+                                            <div class="rating-product__body rating__body">
+                                                <div class="rating-product__active rating__active"></div>
+                                                <div class="rating-product__items rating__items">
+                                                    <input class="rating-product__item rating__item" type="radio"
+                                                        value="1" name="rating">
+                                                    <input class="rating-product__item rating__item" type="radio"
+                                                        value="2" name="rating">
+                                                    <input class="rating-product__item rating__item" type="radio"
+                                                        value="3" name="rating">
+                                                    <input class="rating-product__item rating__item" type="radio"
+                                                        value="4" name="rating">
+                                                    <input class="rating-product__item rating__item" type="radio"
+                                                        value="5" name="rating">
+                                                </div>
+                                            </div>
+                                            <div class="rating-product__value rating__value">2.5</div>
+                                            <div class="rating-product__review rating__review">1 отзыв</div>
+                                        </div>
+                                        <div class="product-cart__price price-product-cart">
+                                            <div class="price-product-cart__new uah">2380</div>
+                                            <div class="price-product-cart__old">2500</div>
+                                            <button class="product-cart__btn" type="button">Добавить в корзину</button>
+                                        </div>
+
+                                    </div>
+                                </article>
+                                <article class="product-catalog__item">
+                                    <div class="product-cart__favorite _icon-favorite"></div>
+                                    <a class="product-cart__image" href="single-product.html">
+                                        <span class="product-cart__item-image-ibg product-cart__item-image-ibg_contain">
+                                            <picture><source srcset="img/catalog/product/03.webp" type="image/webp"><img src="img/catalog/product/03.jpg" alt="Картинка"></picture>
+                                        </span>
+                                    </a>
+                                    <div class="product-cart__body">
+                                        <a class="product-cart__category" href="#">Тату машинки</a>
+                                        <a class="product-cart__title" href="#">Foxxx Kitsune Mini Vintage Aging With
+                                            Gold
+                                            RCA</a>
+                                        <div class="product-cart__descr">
+                                            Kitsune Rotary — это традиционный миниатюрный поворотник. Рама данной модели
+                                            сделана из прочного алюминия
+                                        </div>
+                                        <div class="product-cart__rating rating rating_set rating-product">
+                                            <div class="rating-product__body rating__body">
+                                                <div class="rating-product__active rating__active"></div>
+                                                <div class="rating-product__items rating__items">
+                                                    <input class="rating-product__item rating__item" type="radio"
+                                                        value="1" name="rating">
+                                                    <input class="rating-product__item rating__item" type="radio"
+                                                        value="2" name="rating">
+                                                    <input class="rating-product__item rating__item" type="radio"
+                                                        value="3" name="rating">
+                                                    <input class="rating-product__item rating__item" type="radio"
+                                                        value="4" name="rating">
+                                                    <input class="rating-product__item rating__item" type="radio"
+                                                        value="5" name="rating">
+                                                </div>
+                                            </div>
+                                            <div class="rating-product__value rating__value">3.5</div>
+                                            <div class="rating-product__review rating__review">580 отзывов</div>
+                                        </div>
+                                        <div class="product-cart__price price-product-cart">
+                                            <div class="price-product-cart__new uah">2380</div>
+                                            <div class="price-product-cart__old">2500</div>
+                                            <button class="product-cart__btn" type="button">Добавить в корзину</button>
+                                        </div>
+
+                                    </div>
+                                </article>
+                                <article class="product-catalog__item">
+                                    <div class="product-cart__favorite _icon-favorite"></div>
+                                    <a class="product-cart__image" href="single-product.html">
+                                        <span class="product-cart__item-image-ibg product-cart__item-image-ibg_contain">
+                                            <picture><source srcset="img/catalog/product/04.webp" type="image/webp"><img src="img/catalog/product/04.jpg" alt="Картинка"></picture>
+                                        </span>
+                                    </a>
+                                    <div class="product-cart__body">
+                                        <a class="product-cart__category" href="#">Тату машинки</a>
+                                        <a class="product-cart__title" href="#">Skinductor Vertigo Long Stroke</a>
+                                        <div class="product-cart__descr">
+                                            Версия с увеличенным ходом иглы!
+                                            Безинерционная передача SpinRod, позволяет использовать двигатель в широком
+                                            диапазоне скоростей, в том числе и на низких оборотах с достаточной
+                                            мощностью
+                                        </div>
+                                        <div class="product-cart__rating rating rating_set rating-product">
+                                            <div class="rating-product__body rating__body">
+                                                <div class="rating-product__active rating__active"></div>
+                                                <div class="rating-product__items rating__items">
+                                                    <input class="rating-product__item rating__item" type="radio"
+                                                        value="1" name="rating">
+                                                    <input class="rating-product__item rating__item" type="radio"
+                                                        value="2" name="rating">
+                                                    <input class="rating-product__item rating__item" type="radio"
+                                                        value="3" name="rating">
+                                                    <input class="rating-product__item rating__item" type="radio"
+                                                        value="4" name="rating">
+                                                    <input class="rating-product__item rating__item" type="radio"
+                                                        value="5" name="rating">
+                                                </div>
+                                            </div>
+                                            <div class="rating-product__value rating__value">2.5</div>
+                                            <div class="rating-product__review rating__review">1 отзыв</div>
+                                        </div>
+                                        <div class="product-cart__price price-product-cart">
+                                            <div class="price-product-cart__new uah">2380</div>
+                                            <div class="price-product-cart__old">2500</div>
+                                            <button class="product-cart__btn" type="button">Добавить в корзину</button>
+                                        </div>
+
+                                    </div>
+                                </article>
+                                <article class="product-catalog__item">
+                                    <div class="product-cart__favorite _icon-favorite"></div>
+                                    <a class="product-cart__image" href="single-product.html">
+                                        <span class="product-cart__item-image-ibg product-cart__item-image-ibg_contain">
+                                            <picture><source srcset="img/catalog/product/05.webp" type="image/webp"><img src="img/catalog/product/05.jpg" alt="Картинка"></picture>
+                                        </span>
+                                    </a>
+                                    <div class="product-cart__body">
+                                        <a class="product-cart__category" href="#">Тату машинки</a>
+                                        <a class="product-cart__title" href="#">CNC X-WE Wireless Tattoo Pen</a>
+                                        <div class="product-cart__descr">
+                                            2 аккумулятора высочайшего качества, время работы каждого от 3 до 9 часов,
+                                            в зависимости от нагрузки. Быстрая зарядка аккумулятора (1,5 ч) благодаря
+                                            технологии Type-C Fast Charge.
+                                        </div>
+                                        <div class="product-cart__rating rating rating_set rating-product">
+                                            <div class="rating-product__body rating__body">
+                                                <div class="rating-product__active rating__active"></div>
+                                                <div class="rating-product__items rating__items">
+                                                    <input class="rating-product__item rating__item" type="radio"
+                                                        value="1" name="rating">
+                                                    <input class="rating-product__item rating__item" type="radio"
+                                                        value="2" name="rating">
+                                                    <input class="rating-product__item rating__item" type="radio"
+                                                        value="3" name="rating">
+                                                    <input class="rating-product__item rating__item" type="radio"
+                                                        value="4" name="rating">
+                                                    <input class="rating-product__item rating__item" type="radio"
+                                                        value="5" name="rating">
+                                                </div>
+                                            </div>
+                                            <div class="rating-product__value rating__value">2.5</div>
+                                            <div class="rating-product__review rating__review">1 отзыв</div>
+                                        </div>
+                                        <div class="product-cart__price price-product-cart">
+                                            <div class="price-product-cart__new uah">2380</div>
+                                            <div class="price-product-cart__old">2500</div>
+                                            <button class="product-cart__btn" type="button">Добавить в корзину</button>
+                                        </div>
+
+                                    </div>
+                                </article>
+                                <article class="product-catalog__item">
+                                    <div class="product-cart__favorite _icon-favorite"></div>
+                                    <a class="product-cart__image" href="single-product.html">
+                                        <span class="product-cart__item-image-ibg product-cart__item-image-ibg_contain">
+                                            <picture><source srcset="img/catalog/product/06.webp" type="image/webp"><img src="img/catalog/product/06.jpg" alt="Картинка"></picture>
+                                        </span>
+                                    </a>
+                                    <div class="product-cart__body">
+                                        <a class="product-cart__category" href="#">Тату машинки</a>
+                                        <a class="product-cart__title" href="#">MT Vader Pen MT RCA Cord PRO
+                                            2000.135</a>
+                                        <div class="product-cart__descr">
+                                            Надёжная и эргономичная роторная тату машинка в форм-факторе pen от Mustang
+                                            Tattoo. Мощный двигатель 6 Ватт делает эту ручку одной из самых быстрых,
+                                            а универсальность применения позволяет использовать её для любой задачи
+                                        </div>
+                                        <div class="product-cart__rating rating rating_set rating-product">
+                                            <div class="rating-product__body rating__body">
+                                                <div class="rating-product__active rating__active"></div>
+                                                <div class="rating-product__items rating__items">
+                                                    <input class="rating-product__item rating__item" type="radio"
+                                                        value="1" name="rating">
+                                                    <input class="rating-product__item rating__item" type="radio"
+                                                        value="2" name="rating">
+                                                    <input class="rating-product__item rating__item" type="radio"
+                                                        value="3" name="rating">
+                                                    <input class="rating-product__item rating__item" type="radio"
+                                                        value="4" name="rating">
+                                                    <input class="rating-product__item rating__item" type="radio"
+                                                        value="5" name="rating">
+                                                </div>
+                                            </div>
+                                            <div class="rating-product__value rating__value">2.5</div>
+                                            <div class="rating-product__review rating__review">1 отзыв</div>
+                                        </div>
+                                        <div class="product-cart__price price-product-cart">
+                                            <div class="price-product-cart__new uah">2380</div>
+                                            <div class="price-product-cart__old">2500</div>
+                                            <button class="product-cart__btn" type="button">Добавить в корзину</button>
+                                        </div>
+
+                                    </div>
+                                </article>
+                                <article class="product-catalog__item">
+                                    <div class="product-cart__favorite _icon-favorite"></div>
+                                    <div class="product-cart__new">Новинка</div>
+                                    <a class="product-cart__image" href="single-product.html">
+                                        <span class="product-cart__item-image-ibg product-cart__item-image-ibg_contain">
+                                            <picture><source srcset="img/catalog/product/07.webp" type="image/webp"><img src="img/catalog/product/07.jpg" alt="Картинка"></picture>
+                                        </span>
+                                    </a>
+                                    <div class="product-cart__body">
+                                        <a class="product-cart__category" href="#">Тату машинки</a>
+                                        <a class="product-cart__title" href="#">Verge Direct 2.1 Black</a>
+                                        <div class="product-cart__descr">
+                                            Эксцентрик имеет вкладыш — для регулировки нужного вам хода иглы.
+                                            Так же эксцентрик спроектирован так, что на машине отсутствует центробежная
+                                            тяга, в следствии чего отсутствует вибрация в процессе работы
+                                        </div>
+                                        <div class="product-cart__rating rating rating_set rating-product">
+                                            <div class="rating-product__body rating__body">
+                                                <div class="rating-product__active rating__active"></div>
+                                                <div class="rating-product__items rating__items">
+                                                    <input class="rating-product__item rating__item" type="radio"
+                                                        value="1" name="rating">
+                                                    <input class="rating-product__item rating__item" type="radio"
+                                                        value="2" name="rating">
+                                                    <input class="rating-product__item rating__item" type="radio"
+                                                        value="3" name="rating">
+                                                    <input class="rating-product__item rating__item" type="radio"
+                                                        value="4" name="rating">
+                                                    <input class="rating-product__item rating__item" type="radio"
+                                                        value="5" name="rating">
+                                                </div>
+                                            </div>
+                                            <div class="rating-product__value rating__value">2.5</div>
+                                            <div class="rating-product__review rating__review">1 отзыв</div>
+                                        </div>
+                                        <div class="product-cart__price price-product-cart">
+                                            <div class="price-product-cart__new uah">2380</div>
+                                            <div class="price-product-cart__old">2500</div>
+                                            <button class="product-cart__btn" type="button">Добавить в корзину</button>
+                                        </div>
+
+                                    </div>
+                                </article>
+                                <article class="product-catalog__item">
+                                    <div class="product-cart__favorite _icon-favorite"></div>
+                                    <div class="product-cart__new">Новинка</div>
+                                    <a class="product-cart__image" href="#">
+                                        <span class="product-cart__item-image-ibg product-cart__item-image-ibg_contain">
+                                            <picture><source srcset="img/catalog/product/08.webp" type="image/webp"><img src="img/catalog/product/08.jpg" alt="Картинка"></picture>
+                                        </span>
+                                    </a>
+                                    <div class="product-cart__body">
+                                        <a class="product-cart__category" href="#">Тату машинки</a>
+                                        <a class="product-cart__title" href="#">Verge Direct 2 Black RCA</a>
+                                        <div class="product-cart__descr">
+                                            Эксцентрик имеет вкладыш — для регулировки нужного вам хода иглы.
+                                            Так же эксцентрик спроектирован так, что на машине отсутствует центробежная
+                                            тяга, в следствии чего отсутствует вибрация в процессе работы
+                                        </div>
+                                        <div class="product-cart__rating rating rating_set rating-product">
+                                            <div class="rating-product__body rating__body">
+                                                <div class="rating-product__active rating__active"></div>
+                                                <div class="rating-product__items rating__items">
+                                                    <input class="rating-product__item rating__item" type="radio"
+                                                        value="1" name="rating">
+                                                    <input class="rating-product__item rating__item" type="radio"
+                                                        value="2" name="rating">
+                                                    <input class="rating-product__item rating__item" type="radio"
+                                                        value="3" name="rating">
+                                                    <input class="rating-product__item rating__item" type="radio"
+                                                        value="4" name="rating">
+                                                    <input class="rating-product__item rating__item" type="radio"
+                                                        value="5" name="rating">
+                                                </div>
+                                            </div>
+                                            <div class="rating-product__value rating__value">2.5</div>
+                                            <div class="rating-product__review rating__review">1 отзыв</div>
+                                        </div>
+                                        <div class="product-cart__price price-product-cart">
+                                            <div class="price-product-cart__new uah">2380</div>
+                                            <div class="price-product-cart__old">2500</div>
+                                            <button class="product-cart__btn" type="button">Добавить в корзину</button>
+                                        </div>
+
+                                    </div>
+                                </article>
+                                <article class="product-catalog__item">
+                                    <div class="product-cart__favorite _icon-favorite"></div>
+                                    <div class="product-cart__new">Новинка</div>
+                                    <a class="product-cart__image" href="#">
+                                        <span class="product-cart__item-image-ibg product-cart__item-image-ibg_contain">
+                                            <picture><source srcset="img/catalog/product/09.webp" type="image/webp"><img src="img/catalog/product/09.jpg" alt="Картинка"></picture>
+                                        </span>
+                                    </a>
+                                    <div class="product-cart__body">
+                                        <a class="product-cart__category" href="#">Тату машинки</a>
+                                        <a class="product-cart__title" href="#">Verge Direct 2.1 Pink gip EGO 4 mm
+                                            liners</a>
+                                        <div class="product-cart__descr">
+                                            Эксцентрик имеет вкладыш — для регулировки нужного вам хода иглы.
+                                            Так же эксцентрик спроектирован так, что на машине отсутствует центробежная
+                                            тяга, в следствии чего отсутствует вибрация в процессе работы
+                                        </div>
+                                        <div class="product-cart__rating rating rating_set rating-product">
+                                            <div class="rating-product__body rating__body">
+                                                <div class="rating-product__active rating__active"></div>
+                                                <div class="rating-product__items rating__items">
+                                                    <input class="rating-product__item rating__item" type="radio"
+                                                        value="1" name="rating">
+                                                    <input class="rating-product__item rating__item" type="radio"
+                                                        value="2" name="rating">
+                                                    <input class="rating-product__item rating__item" type="radio"
+                                                        value="3" name="rating">
+                                                    <input class="rating-product__item rating__item" type="radio"
+                                                        value="4" name="rating">
+                                                    <input class="rating-product__item rating__item" type="radio"
+                                                        value="5" name="rating">
+                                                </div>
+                                            </div>
+                                            <div class="rating-product__value rating__value">2.5</div>
+                                            <div class="rating-product__review rating__review">1 отзыв</div>
+                                        </div>
+                                        <div class="product-cart__price price-product-cart">
+                                            <div class="price-product-cart__new uah">2380</div>
+                                            <div class="price-product-cart__old">2500</div>
+                                            <button class="product-cart__btn" type="button">Добавить в корзину</button>
+                                        </div>
+
+                                    </div>
+                                </article>
+                                <article class="product-catalog__item">
+                                    <div class="product-cart__favorite _icon-favorite"></div>
+                                    <a class="product-cart__image" href="#">
+                                        <span class="product-cart__item-image-ibg product-cart__item-image-ibg_contain">
+                                            <picture><source srcset="img/catalog/product/10.webp" type="image/webp"><img src="img/catalog/product/10.jpg" alt="Картинка"></picture>
+                                        </span>
+                                    </a>
+                                    <div class="product-cart__body">
+                                        <a class="product-cart__category" href="#">Тату машинки</a>
+                                        <a class="product-cart__title" href="#">Deuce Machines Direct Drive #7 RCA
+                                            Samurai</a>
+                                        <div class="product-cart__descr">
+                                            Эксцентрик имеет вкладыш — для регулировки нужного вам хода иглы.
+                                            Так же эксцентрик спроектирован так, что на машине отсутствует центробежная
+                                            тяга, в следствии чего отсутствует вибрация в процессе работы
+                                        </div>
+                                        <div class="product-cart__rating rating rating_set rating-product">
+                                            <div class="rating-product__body rating__body">
+                                                <div class="rating-product__active rating__active"></div>
+                                                <div class="rating-product__items rating__items">
+                                                    <input class="rating-product__item rating__item" type="radio"
+                                                        value="1" name="rating">
+                                                    <input class="rating-product__item rating__item" type="radio"
+                                                        value="2" name="rating">
+                                                    <input class="rating-product__item rating__item" type="radio"
+                                                        value="3" name="rating">
+                                                    <input class="rating-product__item rating__item" type="radio"
+                                                        value="4" name="rating">
+                                                    <input class="rating-product__item rating__item" type="radio"
+                                                        value="5" name="rating">
+                                                </div>
+                                            </div>
+                                            <div class="rating-product__value rating__value">2.5</div>
+                                            <div class="rating-product__review rating__review">1 отзыв</div>
+                                        </div>
+                                        <div class="product-cart__price price-product-cart">
+                                            <div class="price-product-cart__new uah">2380</div>
+                                            <div class="price-product-cart__old">2500</div>
+                                            <button class="product-cart__btn" type="button">Добавить в корзину</button>
+                                        </div>
+
+                                    </div>
+                                </article>
+                                <article class="product-catalog__item">
+                                    <div class="product-cart__favorite _icon-favorite"></div>
+                                    <div class="product-cart__new">Новинка</div>
+                                    <a class="product-cart__image" href="#">
+                                        <span class="product-cart__item-image-ibg product-cart__item-image-ibg_contain">
+                                            <picture><source srcset="img/catalog/product/11.webp" type="image/webp"><img src="img/catalog/product/11.jpg" alt="Картинка"></picture>
+                                        </span>
+                                    </a>
+                                    <div class="product-cart__body">
+                                        <a class="product-cart__category" href="#">Тату машинки</a>
+                                        <a class="product-cart__title" href="#">Cyborg Machines Alter Rotary Axis Cross
+                                            Sexy
+                                            Nymph</a>
+                                        <div class="product-cart__descr">
+                                            Эксцентрик имеет вкладыш — для регулировки нужного вам хода иглы.
+                                            Так же эксцентрик спроектирован так, что на машине отсутствует центробежная
+                                            тяга, в следствии чего отсутствует вибрация в процессе работы
+                                        </div>
+                                        <div class="product-cart__rating rating rating_set rating-product">
+                                            <div class="rating-product__body rating__body">
+                                                <div class="rating-product__active rating__active"></div>
+                                                <div class="rating-product__items rating__items">
+                                                    <input class="rating-product__item rating__item" type="radio"
+                                                        value="1" name="rating">
+                                                    <input class="rating-product__item rating__item" type="radio"
+                                                        value="2" name="rating">
+                                                    <input class="rating-product__item rating__item" type="radio"
+                                                        value="3" name="rating">
+                                                    <input class="rating-product__item rating__item" type="radio"
+                                                        value="4" name="rating">
+                                                    <input class="rating-product__item rating__item" type="radio"
+                                                        value="5" name="rating">
+                                                </div>
+                                            </div>
+                                            <div class="rating-product__value rating__value">2.5</div>
+                                            <div class="rating-product__review rating__review">1 отзыв</div>
+                                        </div>
+                                        <div class="product-cart__price price-product-cart">
+                                            <div class="price-product-cart__new uah">2380</div>
+                                            <div class="price-product-cart__old">2500</div>
+                                            <button class="product-cart__btn" type="button">Добавить в корзину</button>
+                                        </div>
+
+                                    </div>
+                                </article>
+                                <article class="product-catalog__item">
+                                    <div class="product-cart__favorite _icon-favorite"></div>
+                                    <a class="product-cart__image" href="#">
+                                        <span class="product-cart__item-image-ibg product-cart__item-image-ibg_contain">
+                                            <picture><source srcset="img/catalog/product/12.webp" type="image/webp"><img src="img/catalog/product/12.jpg" alt="Картинка"></picture>
+                                        </span>
+                                    </a>
+                                    <div class="product-cart__body">
+                                        <a class="product-cart__category" href="#">Тату машинки</a>
+                                        <a class="product-cart__title" href="#">Verge Direct 2.1 Gunmetal</a>
+                                        <div class="product-cart__descr">
+                                            Эксцентрик имеет вкладыш — для регулировки нужного вам хода иглы.
+                                            Так же эксцентрик спроектирован так, что на машине отсутствует центробежная
+                                            тяга, в следствии чего отсутствует вибрация в процессе работы
+                                        </div>
+                                        <div class="product-cart__rating rating rating_set rating-product">
+                                            <div class="rating-product__body rating__body">
+                                                <div class="rating-product__active rating__active"></div>
+                                                <div class="rating-product__items rating__items">
+                                                    <input class="rating-product__item rating__item" type="radio"
+                                                        value="1" name="rating">
+                                                    <input class="rating-product__item rating__item" type="radio"
+                                                        value="2" name="rating">
+                                                    <input class="rating-product__item rating__item" type="radio"
+                                                        value="3" name="rating">
+                                                    <input class="rating-product__item rating__item" type="radio"
+                                                        value="4" name="rating">
+                                                    <input class="rating-product__item rating__item" type="radio"
+                                                        value="5" name="rating">
+                                                </div>
+                                            </div>
+                                            <div class="rating-product__value rating__value">2.5</div>
+                                            <div class="rating-product__review rating__review">1 отзыв</div>
+                                        </div>
+                                        <div class="product-cart__price price-product-cart">
+                                            <div class="price-product-cart__new uah">2380</div>
+                                            <div class="price-product-cart__old">2500</div>
+                                            <button class="product-cart__btn" type="button">Добавить в корзину</button>
+                                        </div>
+
+                                    </div>
+                                </article>
+                            </div>
+                            <div class="catalog__footer catalog-footer">
+                                <div class="catalog-footer__pagging pagging">
+                                    <button class="pagging__button pagging__button_prev" type="button"></button>
+                                    <ul class="pagging__list">
+                                        <li class="pagging__item">
+                                            <a class="pagging__link" href="#">1</a>
+                                        </li>
+                                        <li class="pagging__item">
+                                            <a class="pagging__link _active" href="#">2</a>
+                                        </li>
+                                        <li class="pagging__item">
+                                            <a class="pagging__link" href="#">3</a>
+                                        </li>
+                                        <li class="pagging__item">
+                                            <a class="pagging__link" href="#">4</a>
+                                        </li>
+                                        <li class="pagging__item">
+                                            <a class="pagging__link" href="#">5</a>
+                                        </li>
+                                    </ul>
+                                    <button class="pagging__button pagging__button_next" type="button"></button>
+                                </div>
+                                <div class="catalog-footer__dropdown dropdown">
+                                    <button class="dropdown__button _icon-arrow-spoller">Показывать по 12</button>
+                                    <ul class="dropdown__list catalog-footer__list">
+                                        <li class="dropdown__list-item" data-value="1">Показывать по 12</li>
+                                        <li class="dropdown__list-item" data-value="1">Показывать по 24</li>
+                                        <li class="dropdown__list-item" data-value="2">Показывать по 48</li>
+                                    </ul>
+                                    <input type="text" name="select-category" value="" class="dropdown__input-hidden">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer class="footer">
+    <div class="footer__container">
+        <div class="footer__body">
+            <nav class="footer__menu footer-menu">
+                <ul class="footer-menu__list">
+                    <li class="footer-menu__item"><a class="footer-menu__link" href="#">Машинки</a></li>
+                    <li class="footer-menu__item"><a class="footer-menu__link" href="#">Тату наборы</a></li>
+                    <li class="footer-menu__item"><a class="footer-menu__link" href="#">Краски</a></li>
+                    <li class="footer-menu__item"><a class="footer-menu__link" href="#">Иглы</a></li>
+                </ul>
+                <ul class="footer-menu__list">
+                    <li class="footer-menu__item"><a class="footer-menu__link" href="#">Картриджи</a></li>
+                    <li class="footer-menu__item"><a class="footer-menu__link" href="#">Держатели</a></li>
+                    <li class="footer-menu__item"><a class="footer-menu__link" href="#">Наконечники</a></li>
+                    <li class="footer-menu__item"><a class="footer-menu__link" href="#">Прочие товары</a></li>
+                </ul>
+            </nav>
+            <div class="footer__top top-footer">
+                <a class="top-footer__logo-ibg top-footer__logo-ibg_contain logo" href="index.html">
+                    <img class="logo__img" src="img/logo.svg" alt="Логотип">
+                </a>
+                <a class="top-footer__phone _icon-phone" href="tel:+380675525252"><span>+38(067)552-52-52</span></a>
+                <div class="footer__social social-footer">
+                    <a class="social-footer__item" href="#">TW</a>
+                    <a class="social-footer__item" href="#">Inst</a>
+                    <a class="social-footer__item" href="#">FB</a>
+                </div>
+            </div>
+            <div class="footer__bottom bottom-footer">
+                <ul class="bottom-footer__list">
+                    <li class="bottom-footer__item"><a class="bottom-footer__link" href="contact.html">Контакты</a></li>
+                    <li class="bottom-footer__item"><a class="bottom-footer__link" href="about.html">О компании</a></li>
+                    <li class="bottom-footer__item"><a class="bottom-footer__link" href="#">Скидки</a></li>
+                </ul>
+                <a class="bottom-footer__btn-up btn-up" href="#">
+                    <div class="btn-up__text">Вернуться вверх</div>
+                    <div class="btn-up__button"></div>
+                </a>
+            </div>
+        </div>
+        <div class="footer__privacy-policy privacy-policy">
+            <a class="privacy-policy__link" href="#">Политика конфиденциальности</a>
+        </div>
+    </div>
+</footer>
+    </div>
+   <div class="popup-user popup" id="popup-user">
+    <div class="popup-user__wrapper wrapper">
+        <div class="popup-user__body">
+            <div class="popup-user__content popup__content">
+                <button class="popup-user__btn-close close-popup"></button>
+                <div class="popup-user__title">Зарегистрируйтесь или войдите</div>
+                <form class="popup-user__form form-user">
+                    <div class="form-user__item">
+                        <label for="formPhone" class="form-user__label">Номер телефона</label>
+                        <input id="formPhone" type="tel" name="name" class="form-user__input"
+                            placeholder="Введите номер">
+                    </div>
+                </form>
+                <button class="popup-user__button button" type="button">Получить код в SMS</button>
+                <div class="popup-user__social-title">Или войдите с помощью соц. сетей</div>
+                <div class="popup-user__social-links social-popup">
+                    <a class="social-popup__item" href="#">TW</a>
+                    <a class="social-popup__item" href="#">Inst</a>
+                    <a class="social-popup__item" href="#">FB</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="popup-total popup" id="popup-total">
+    <div class="popup-total__wrapper wrapper">
+        <div class="popup-total__body">
+            <div class="popup-total__content popup__content">
+                <button class="popup-total__btn-close close-popup"></button>
+                <div class="popup-total__title">Спасибо за заказ!</div>
+                <div class="popup-total__text">
+                    В ближайшее время с вами свяжется наш менеджер для уточнения деталей доставки
+                </div>
+                <a class="popup-total__button button" href="catalog.html">Вернуться к покупкам</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="popup-code popup" id="popup-code">
+    <div class="popup-code__wrapper wrapper">
+        <div class="popup-code__body">
+            <div class="popup-code__content popup__content">
+                <button class="popup-code__btn-close close-popup"></button>
+                <div class="popup-code__title">Промокод неактивен</div>
+                <div class="popup-code__text">
+                    Проверьте правильность написания промокода или попробуйте другой
+                </div>
+                <a class="popup-code__button button" href="cart.html">Вернуться в корзину</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="popup-review__bg popup-two__bg">
+    <div class="popup-review popup-two">
+        <button class="popup-review__btn-close close-popup-two"></button>
+        <div class="popup-review__wrapper">
+            <div class="popup-review__title">Оставьте отзыв об этом товаре</div>
+
+            <form class="popup-review__form form-popup-review">
+                <textarea class="form-popup-review__area"></textarea>
+
+                <div class="form-popup-review__box">
+
+                    <div class="popup-review__rating rating rating_set">
+                        <div class="rating__title">Как вы оцениваете этот товар?</div>
+                        <div class="popup-review__body rating__body">
+                            <div class="popup-review__active rating__active"></div>
+                            <div class="popup-review__items rating__items">
+                                <input class="popup-review__item rating__item" type="radio" value="1" name="rating">
+                                <input class="popup-review__item rating__item" type="radio" value="2" name="rating">
+                                <input class="popup-review__item rating__item" type="radio" value="3" name="rating">
+                                <input class="popup-review__item rating__item" type="radio" value="4" name="rating">
+                                <input class="popup-review__item rating__item" type="radio" value="5" name="rating">
+                            </div>
+                        </div>
+                        <div class="popup-review__value rating__value">0</div>
+                    </div>
+                    <button class="form-popup-review__btn border" type="submit">Оставить отзыв</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+    <script src="js/app.min.js?_v=20220506150256"></script>
+</body>
+
+</html>
